@@ -10,7 +10,7 @@ public class ejercicioLectura {
 		FileReader fichero=null;
 		FileWriter escrito=null;
 		String lineas=" Esto es una prueba de escritura ";
-		
+		System.out.println("");
 		int Avocal=0;
 		int Evocal=0;
 		int Ivocal=0;
