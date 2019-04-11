@@ -1,0 +1,8 @@
+Hola a todos mi nombre es Carlos Costell y estamos haciendo la prueba de los ficheros en
+Java. 
+Vamos a ver como funciona la nueva clase y ver si realmente funciona.
+Prueba 1
+Prueba 2
+
+En efecto funciona. 
+ Esto es una prueba de escritura 
