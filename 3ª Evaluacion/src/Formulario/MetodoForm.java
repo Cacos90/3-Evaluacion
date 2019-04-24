@@ -16,7 +16,7 @@ public class MetodoForm extends JFrame{
 	JLabel etiqueta, etiqueta2, contrasena;
 	JPasswordField contrasenna;
 	
-	public void MetodoForm(){
+	public  MetodoForm(){
 		Toolkit mipantalla=Toolkit.getDefaultToolkit();
 		Image icono =mipantalla.getImage("C:\\Users\\jorge\\Documents\\Programacion\\3 evaluación\\src\\ganador.png");
 		setIconImage(icono);
