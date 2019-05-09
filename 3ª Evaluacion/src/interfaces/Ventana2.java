@@ -18,23 +18,7 @@ import java.awt.event.ActionEvent;
 public class Ventana2 extends JFrame {
  
 	private static JPanel contentPane;
-	public static JCheckBox lentBox;
-	public static JCheckBox choBox;
-	public static JCheckBox morBox;
-	public static JCheckBox garbaBox;
-	public static JCheckBox zanaCheckBox;
-	public static JCheckBox cebBox;
-	public static JCheckBox pBox;
-	public static JCheckBox juBox;
-	public static JCheckBox nuezMBox;
-	public static JCheckBox laurel;
-	public static JCheckBox colBox;
-	public static JCheckBox pescCheckBox;
-	public static JButton comprobanteButton;
-	public static JLabel correcJLabel;
-	public static JRadioButton lentejas;
-	public static JRadioButton judias;
-	public static JRadioButton cocido;
+	
 	
 	public Ventana2() {
 		setTitle("Chef 4000");
@@ -121,5 +105,49 @@ public class Ventana2 extends JFrame {
 		});
 		btnSalir.setBounds(209, 167, 104, 33);
 		contentPane.add(btnSalir);
+		botonComprobacion.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				if (rdbtnLentejas.isSelected()){
+					if (chorizo.isSelected() && morcilla.isSelected() && garbanzos.isSelected()
+							&& zanahoria.isSelected()){
+					comprobante.setText("Correcto");
+					}
+					else {
+						comprobante.setText("Incorrecto");
+					
+					}
+						
+				}
+				if (rdbtnCocido.isSelected()){
+					if (lenteja.isSelected() && chorizo.isSelected() && cebolla.isSelected()
+							&& zanahoria.isSelected() && pimenton.isSelected()){
+						comprobante.setText("Correcto");
+					}
+					else {
+						comprobante.setText("Incorrecto");
+					
+					}
+				}
+				
+				if (rdbtnJudas.isSelected()){
+					if (judia.isSelected() && nuezMoscada.isSelected() && laurel.isSelected()
+							&& colorante.isSelected() && chorizo.isSelected() && chorizo.isSelected()
+							&& cebolla.isSelected()){
+						comprobante.setText("Correcto");
+						
+					}
+					else {
+						comprobante.setText("Incorrecto");
+					
+					}
+				}
+			}
+		});
+		
 	}
+	
+	
 }
